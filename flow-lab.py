@@ -11,21 +11,21 @@
 # Hints:  Use the in operator to check if a character is in another string
 #         For example, if some_char in 'abc':
 
-# alphabet = input('Enter a letter in the alphabet a, e, i, o, u ' ).lower()
-# print(f'The user entered {alphabet}')
+alphabet = input('Enter a letter in the alphabet a, e, i, o, u ' ).lower()
+print(f'The user entered {alphabet}')
 
-# if alphabet == 'a':
-#     print('The letter a is a vowel')
-# elif alphabet == 'e':
-#      print('The letter e is a vowel')
-# elif alphabet == 'i':
-#     print('The letter i is a vowel')
-# elif alphabet == 'o':
-#     print('The letter o is a vowel')
-# elif alphabet == 'u':
-#     print('The letter u is a vowel')
-# else:
-#     print(f'The letter {alphabet} is a consonant')
+if alphabet == 'a':
+    print('The letter a is a vowel')
+elif alphabet == 'e':
+     print('The letter e is a vowel')
+elif alphabet == 'i':
+    print('The letter i is a vowel')
+elif alphabet == 'o':
+    print('The letter o is a vowel')
+elif alphabet == 'u':
+    print('The letter u is a vowel')
+else:
+    print(f'The letter {alphabet} is a consonant')
 
 
 
@@ -38,8 +38,8 @@
 #      - What you entered is xx characters long
 # 3. Return to step 1, unless the word 'quit' was entered.
 
-# phrase = input("Please enter a word or phrase")
-# print(f'What you entered is {len(phrase)} characters long')
+phrase = input("Please enter a word or phrase")
+print(f'What you entered is {len(phrase)} characters long')
 
 
 
@@ -59,14 +59,14 @@
 # Start with an if that checks if the age is less than 3
 
 
-# dog = int(input("Input a dog's age"))
+dog = int(input("Input a dog's age"))
 
-# if dog <= 2:
-#     dog_year = dog * 10
-# else: 
-#     dog_year = 20 + (dog - 2) * 7
+if dog <= 2:
+    dog_year = dog * 10
+else: 
+    dog_year = 20 + (dog - 2) * 7
 
-# print(f"The dog's age in dog years is {dog_year}")
+print(f"The dog's age in dog years is {dog_year}")
 
 
 # exercise-04 What kind of Triangle?
@@ -85,19 +85,20 @@
 #      - A triangle with sides of <a>, <b> & <c> is a <type of triangle> triangle
 
 # Prompt the user to enter the lengths of three sides of a triangle
-# print("Enter the lengths of three sides of a triangle:")
-# a = float(input("a: "))
-# b = float(input("b: "))
-# c = float(input("c: "))
 
-# if a == b == c: 
-#     triangle_type = "equilateral"
-# elif a != b and a!= c:
-#     triangle_type = "scalene"
-# else:
-#     triangle_type = "isosceles"
+print("Enter the lengths of three sides of a triangle:")
+a = float(input("a: "))
+b = float(input("b: "))
+c = float(input("c: "))
 
-# print(f"A triangle with sides of {a}, {b}, & {c} is a {triangle_type} triangle.")
+if a == b == c: 
+    triangle_type = "equilateral"
+elif a != b and a!= c:
+    triangle_type = "scalene"
+else:
+    triangle_type = "isosceles"
+
+print(f"A triangle with sides of {a}, {b}, & {c} is a {triangle_type} triangle.")
 
 
 
@@ -120,18 +121,18 @@
 # Use a while loop with a looping variable, or look into Python ranges, e.g.:
 #   for n in range(50):
 
-# Initialize the first two terms of the Fibonacci sequence
-# a, b = 0, 1
 
-# Print the first two terms of the Fibonacci sequence
-# print(f"term: 0 / number: {a}")
-# print(f"term: 1 / number: {b}")
+a, b = 0, 1
+
+
+print(f"term: 0 / number: {a}")
+print(f"term: 1 / number: {b}")
 
 # Calculate and print the subsequent terms of the Fibonacci sequence
-# for term in range(2, 51):
-#     c = a + b
-#     print(f"term: {term} / number: {c}")
-#     a, b = b, c
+for term in range(2, 51):
+    c = a + b
+    print(f"term: {term} / number: {c}")
+    a, b = b, c
 
 
 
